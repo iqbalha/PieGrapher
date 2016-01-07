@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Pontano+Sans);
+
+body {
+	font-family: 'Pontano Sans', sans-serif;
+}
+
+input {
+	font-family: 'Pontano Sans', sans-serif;
+}
+
+/* ----- M A I N ----- */
+
+#main {
+	
+}
+
+/* ----- I N P U T ----- */
+
+#input {
+	padding: 5px;
+	width: 400px;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	text-align: left;
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+	box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.3);
+}
+
+#input-title {
+	font-size: 3em;
+}
+
+#input-add {
+	font-size: 1em;
+	padding: 15px;
+	width: 90%;
+	text-align: center;
+	cursor: pointer;
+	color: rgb(0, 0, 0);
+	margin: auto;
+	margin-top: 10px;
+	background-color: rgb(0, 200, 255);
+}
+
+
+/* ----- E N T R Y ----- */
+
+.entry {
+	
+}
+
+.entry-color {
+	display: block;
+	background-color: red;
+	width: 50px;
+}
+
+
+/* ----- C H A R T ----- */
+
+#chart {
+	position: fixed;
+	left: 410px;
+	background-color: rgb(200, 200, 200);
+}
