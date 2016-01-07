@@ -1,4 +1,23 @@
+/*
+ *	index.js
+ *	Contains main script for Pie Charter.
+ *
+ *	Author(s): Haris, Nim
+ */
+
 "use strict"
+
+
+/* ---- Entry Class ----- */
+class Entry () {
+	constructor(color) {
+		this.name = "";				// Name.
+		this.color = color;				// Colour in hex.
+		this.quantity = 0;		// Quanity.
+	}
+  
+}
+
 
 // List of all the entry's
 entries = []
@@ -11,6 +30,7 @@ function addNewEntry() {
 	
 }
 
+
 /** 
   Deletes an existing entry from the entries list by index.
   Remove the entries row from the input table.
@@ -19,10 +39,32 @@ function deleteEntry(index) {
 	
 }
 
+
 /**
   Clears the input table and entries list. Will also set the chart section
   to go back to it's default apperance showing the instructions image.
 **/
- function clear() {
+function clear() {
+	
+}
+
+
+/** Updates the input division with the new data **/
+function update() {
+	
+}
+
+
+/**
+ Create the pie Chart and place the buttons based on the data in entries
+ and the size of the screen
+**/
+ function generate() {
+	
+}
+
+
+/** Saves the pie chart image as a PNG**/
+function download() {
 	
 }
