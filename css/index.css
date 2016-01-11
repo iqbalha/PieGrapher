@@ -1,4 +1,13 @@
+/*
+ *	index.css
+ * 	Main stylesheet for index.html.
+ *
+ *	Author(s): Nim
+ */
+
+ 
 @import url(https://fonts.googleapis.com/css?family=Pontano+Sans);
+
 
 body {
 	font-family: 'Pontano Sans', sans-serif;
@@ -8,11 +17,13 @@ input {
 	font-family: 'Pontano Sans', sans-serif;
 }
 
+
 /* ----- M A I N ----- */
 
 #main {
 	
 }
+
 
 /* ----- I N P U T ----- */
 
@@ -53,16 +64,47 @@ input {
 }
 
 .entry-color {
-	display: block;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 0px;
+	padding: 0px;
+
+	text-align: center;
+	cursor: pointer;
 	background-color: red;
-	width: 50px;
 }
 
+.entry-name, .entry-quantity {
+	font-size: 1em;
+	height: 30px;
+}
+
+.entry-quantity {
+	width: 100px;
+}
+
+
+.entry-delete {
+	display: inline-block;
+	width: 20px;
+	height: 30px;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	cursor: pointer;
+	background-color: red;
+}
 
 /* ----- C H A R T ----- */
 
 #chart {
+	height: 100%;
 	position: fixed;
 	left: 410px;
+	padding: 10px;
+	top: 0px;
 	background-color: rgb(200, 200, 200);
+	z-index: -1;
 }
+

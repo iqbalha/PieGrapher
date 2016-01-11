@@ -5,22 +5,21 @@
  *	Author(s): Haris, Nim
  */
 
-"use strict"
+"use strict";
 
 
 /* ---- Entry Class ----- */
-class Entry () {
+class Entry {
 	constructor(color) {
 		this.name = "";				// Name.
 		this.color = color;				// Colour in hex.
 		this.quantity = 0;		// Quanity.
-	}
-  
+	} 
 }
 
 
 // List of all the entry's
-entries = []
+var entries = [];
 
 /** 
   Adds a new entry to the entries list. New entries will have a randomly
@@ -68,3 +67,19 @@ function update() {
 function download() {
 	
 }
+
+/*
+ * Update dimensions of Pie Chart elements.
+ */
+function updatePieChartDimensions() {	
+	$("#chart").width($(document).width() - 430);
+	
+	// Dimensions of <canvas id="chart-pie">
+	// proportional to minimum of height and width of <div id="chart">. 
+	$("#chart-pie").width();
+}
+
+/* ----- O N L O A D ----- */
+$(function () {
+	updateChartWidth();
+});
