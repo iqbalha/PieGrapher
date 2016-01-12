@@ -30,71 +30,142 @@ input {
 #input {
 	padding: 5px;
 	width: 400px;
-	height: 100%;
-	position: fixed;
+	min-height: 100%;
+	position: absolute;
 	top: 0px;
 	left: 0px;
 	text-align: left;
-	color: rgb(255, 255, 255);
-	background-color: rgb(0, 0, 0);
+	color: rgb(230, 230, 230);
+	background-color: rgb(60, 60, 60);
 	box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.3);
 }
 
 #input-title {
-	font-size: 3em;
+	text-align: center;
+	font-size: 2em;
+	color: rgb(120, 120, 120);
+}
+#input-author {
+	font-size: 0.7em;
+	margin-top: 10px;
+	text-align: center;
+	color: rgb(120, 120, 120);
 }
 
-#input-add {
+#input .button {
 	font-size: 1em;
-	padding: 15px;
-	width: 90%;
+	padding: 10px;
+	width: 80%;
 	text-align: center;
 	cursor: pointer;
-	color: rgb(0, 0, 0);
+	color: rgb(230, 230, 230);
 	margin: auto;
 	margin-top: 10px;
-	background-color: rgb(0, 200, 255);
+}
+
+#input-add, #input-export {
+	background-color: rgb(0, 190, 240);
+}
+
+#input-add:hover, #input-export:hover {
+	background-color: rgb(0, 180, 230);
+}
+
+#input-add:active, #input-export:active {
+	background-color: rgb(0, 190, 240);
+}
+
+#input-clear {
+	background-color: rgb(239, 32, 53);
+}
+
+#input-clear:hover {
+	background-color: rgb(230, 32, 50);
+}
+
+#input-clear:active {
+	background-color: rgb(239, 32, 53);
+}
+
+#input-clear, #input-export {
+	display: none;
 }
 
 
 /* ----- E N T R Y ----- */
 
 .entry {
-	
+	width: 85%;
+	height: 40px;
+	margin: auto;
+	margin-top: 10px;
+	position: relative;
 }
 
 .entry-color {
 	display: inline-block;
-	width: 30px;
-	height: 30px;
+	width: 15%;
+	height: 100%;
 	margin: 0px;
 	padding: 0px;
-
+	position: absolute;
+	top: 0px;
+	left:0px;
 	text-align: center;
 	cursor: pointer;
-	background-color: red;
+	background-color: rgb(249, 32, 53);
 }
 
-.entry-name, .entry-quantity {
-	font-size: 1em;
-	height: 30px;
+.entry-name {
+	font-size: 1.7em;
+	display: inline-block;
+	width: 45%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	top: 0px;
+	left: 15%;
+	border: none;
 }
 
 .entry-quantity {
-	width: 100px;
+	font-size: 1.7em;
+	display: inline-block;
+	width: 35%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	top: 0px;
+	left: 60%;
+	border: none;
 }
 
 
 .entry-delete {
 	display: inline-block;
-	width: 20px;
-	height: 30px;
+	font-size: 1.7em;
+	width: 15%;
+	height: 100%;
 	margin: 0px;
 	padding: 0px;
+	position: absolute;
+	top: 0px;
+	left: 85%;
 	text-align: center;
 	cursor: pointer;
-	background-color: red;
+	background-color: rgb(239, 32, 53);
 }
+
+.entry-delete:hover {
+	background-color: rgb(230, 32, 50);
+}
+
+.entry-delete:active {
+	background-color: rgb(239, 32, 53);
+}
+
 
 /* ----- C H A R T ----- */
 
@@ -104,7 +175,13 @@ input {
 	left: 410px;
 	padding: 10px;
 	top: 0px;
-	background-color: rgb(200, 200, 200);
+	background-color: rgb(240, 240, 240);
+	/* Line above to be changed to: background-color: rgb(255, 255, 255); */
 	z-index: -1;
 }
 
+#chart-pie {
+	display: block;
+	margin: auto;
+	background-color: white;
+}
